@@ -64,21 +64,20 @@ Number-like strings:
 "123"
 ```
 
-Escaped string with delimiters:
+Strings with delimiters:
 ```json
 "Hello, World"
 ```
 
-Escaped string with quotes:
-```json
-"""This string surrounded by quotes"""
-```
-
-Unescaped string with quotes:
+Strings with quotes:
 ```
 Quote: "
 ```
-(Only strings beginning with quotes need to be escaped.)
+
+Strings surrounded by quotes:
+```json
+"""This string surrounded by quotes"""
+```
 
 ## License
 Licensed under MIT.<br/>

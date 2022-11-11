@@ -1,6 +1,6 @@
 {
 	"name": "csv-document",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"description": "A library for working with CSV documents",
 	"main": "dst/index.js",
 	"type": "module",
