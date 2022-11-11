@@ -27,26 +27,58 @@ doc.entries = [
 	{
 		id: "0",
 		name: "Apple",
-		price: "1",
+		price: 1,
 	},
 	{
 		id: "1",
 		name: "Banana",
-		price: "2",
+		price: 2,
 	},
 	{
 		id: "2",
 		id: "Carrot",
-		price: "3",
+		price: 3,
 	},
 ];
 ```
 
-## UFT8
+## UTF8
 ```typescript
-const csvText = CSVDocument.BOM.UTF8 + doc.serialize();
-const blob = new Blob([csvText]);
+const csvText = doc.serialize();
+const blob = new Blob([CSVDocument.BOM.UTF8 + csvText]);
 ```
+
+## CSV Syntax
+Strings:
+```
+Hello World
+```
+
+Numbers: 
+```json
+123
+```
+
+Number-like strings:
+```json
+"123"
+```
+
+Escaped string with delimiters:
+```json
+"Hello, World"
+```
+
+Escaped string with quotes:
+```json
+"""This string surrounded by quotes"""
+```
+
+Unescaped string with quotes:
+```
+Quote: "
+```
+(Only strings beginning with quotes need to be escaped.)
 
 ## License
 Licensed under MIT.<br/>

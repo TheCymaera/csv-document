@@ -1,19 +1,27 @@
 {
 	"name": "csv-document",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "A library for working with CSV documents",
 	"main": "dst/index.js",
 	"type": "module",
+	"files": [
+		"./src/**",
+		"./dst/**"
+	],
 	"scripts": {
 		"build": "tsc -p tsconfig.json",
-		"build-watch": "tsc -p tsconfig.json --watch"
+		"build-watch": "tsc -p tsconfig.json --watch",
+		"test": "node ./tests/tests.js"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/TheCymaera/csv-document.git"
 	},
 	"keywords": [
-		"csv"
+		"csv",
+		"comma",
+		"separated",
+		"values"
 	],
 	"author": "Cymaera",
 	"license": "MIT",
